@@ -21,7 +21,7 @@ node {
             stage("test") {
               def pwd = pwd()
               baseImage.inside("--volume=${pwd}:/usr/local/src") {
-                  sh "cd /usr/local/src && npm i && npm t"
+                  sh "cd /usr/local/src && npm i && npm run build && npm t"
               }
             }
 
