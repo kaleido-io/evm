@@ -3,6 +3,7 @@
     "allowance(address,address)",
     "approve(address,uint256)",
     "balanceOf(address)",
+    "burn(bytes32[2],uint256,bytes32[2],bytes)",
     "burn(uint256)",
     "burnFrom(address,uint256)",
     "fund(bytes32[2],uint256)",
@@ -21,6 +22,6 @@
     "simulateAccounts(bytes32[2][],uint256)",
     "totalSupply()",
     "transfer(address,uint256)",
-    "transfer(bytes32[2][],bytes32[2],bytes32[2][],bytes32[2])",
+    "transfer(bytes32[2][],bytes32[2],bytes32[2][],bytes32[2],bytes)",
     "transferFrom(address,address,uint256)"
 ]
