@@ -3,7 +3,7 @@ import Opcode from '../interfaces/opcode.interface';
 import { SHL } from './shl';
 import { SAR } from './sar';
 import { SUB } from './sub';
-import * as BigNumber from '../../node_modules/big-integer';
+import * as BigNumber from 'big-integer';
 
 export default (opcode: Opcode, state: EVM): void => {
     const left = state.stack.pop();

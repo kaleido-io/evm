@@ -1,6 +1,6 @@
 import EVM from '../classes/evm.class';
 import Opcode from '../interfaces/opcode.interface';
-import * as BigNumber from '../../node_modules/big-integer';
+import * as BigNumber from 'big-integer';
 import { LT } from './lt';
 import { GT } from './gt';
 import stringify from '../utils/stringify';

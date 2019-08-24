@@ -2,7 +2,7 @@ import EVM from '../classes/evm.class';
 import Opcode from '../interfaces/opcode.interface';
 import { MLOAD } from './mload';
 import { hex2a } from '../utils/hex';
-import * as BigNumber from '../../node_modules/big-integer';
+import * as BigNumber from 'big-integer';
 import stringify from '../utils/stringify';
 
 export class RETURN {

@@ -1,4 +1,4 @@
-import * as BigNumber from '../../node_modules/big-integer';
+import * as BigNumber from 'big-integer';
 
 export default (item: any) => {
     if (BigNumber.isInstance(item)) {

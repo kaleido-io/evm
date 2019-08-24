@@ -2,8 +2,8 @@
   "name": "@photic/evm",
   "version": "0.2.0",
   "description": "An ethereum virtual machine (EVM) bytecode decompiler",
-  "main": "lib/EVM.node.js",
-  "module": "lib/EVM.js",
+  "main": "lib/src",
+  "module": "lib/src",
   "typings": "typings/src/index.d.ts",
   "scripts": {
     "tscheck": "tsc --noEmit --project tsconfig.json",
@@ -11,7 +11,7 @@
     "test": "mocha -r ts-node/register tests/**/*.ts",
     "prepublishOnly": "npm run clean && npm run build:prod",
     "clean": "rimraf ./lib",
-    "build": "npm run build:hashes && webpack",
+    "build": "npm run build:hashes && node_modules/typescript/bin/tsc",
     "build:prod": "cross-env NODE_ENV=production npm run build",
     "build:hashes": "ts-node ./scripts/build.ts",
     "prettier:diff": "prettier --write --config ./.prettierrc --list-different 'src/**/*.ts'"
@@ -37,15 +37,10 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "7.2.2",
-    "@babel/preset-env": "7.2.3",
     "@types/chai": "4.1.7",
     "@types/ethereumjs-abi": "0.6.1",
     "@types/mocha": "5.2.5",
     "@types/node": "10.12.18",
-    "@types/webpack": "4.4.22",
-    "@types/webpack-merge": "4.1.3",
-    "@types/webpack-node-externals": "1.6.3",
     "awesome-typescript-loader": "5.2.1",
     "big-integer": "1.6.40",
     "chai": "4.2.0",
@@ -63,11 +58,7 @@
     "tslint-microsoft-contrib": "6.0.0",
     "tslint-no-unused-expression-chai": "0.1.4",
     "typescript": "3.2.2",
-    "web3": "1.0.0-beta.37",
-    "webpack": "4.28.3",
-    "webpack-cli": "3.1.2",
-    "webpack-merge": "4.1.5",
-    "webpack-node-externals": "1.7.2"
+    "web3": "1.0.0-beta.37"
   },
   "lint-staged": {
     "*.ts": [

@@ -2,7 +2,7 @@ import EVM from '../classes/evm.class';
 import Opcode from '../interfaces/opcode.interface';
 import { MUL } from './mul';
 import { MOD } from './mod';
-import * as BigNumber from '../../node_modules/big-integer';
+import * as BigNumber from 'big-integer';
 
 export default (opcode: Opcode, state: EVM): void => {
     const left = state.stack.pop();

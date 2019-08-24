@@ -1,4 +1,4 @@
-const findOpcode = require('../../node_modules/ethereumjs-vm/dist/opcodes.js');
+const findOpcode = require('ethereumjs-vm/dist/opcodes.js');
 import * as functionHashes from '../../data/functionHashes.json';
 import * as eventHashes from '../../data/eventHashes.json';
 import opcodeFunctions from '../utils/opcodes';

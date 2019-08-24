@@ -1,4 +1,4 @@
-import * as BigNumber from '../../node_modules/big-integer';
+import * as BigNumber from 'big-integer';
 import * as functionHashes from '../../data/functionHashes.json';
 
 const parseSingle = (data: any, type: any) => {
